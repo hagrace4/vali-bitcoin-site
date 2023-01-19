@@ -23,6 +23,14 @@ body {
 #main > nav {
   order: -1;
 }
+#main > nav,
+li {
+  list-style-type: none;
+  padding: 10px;
+  color: #f2a900;
+  
+
+}
 header {
   border-bottom: 1px solid #f2a900;
   color: #f2a900;
