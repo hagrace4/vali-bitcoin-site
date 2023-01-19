@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  background-color: rgb(117, 116, 116);
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: #333;
+}
+#main > nav {
+  order: -1;
+}
+header {
+  border-bottom: 1px solid #f2a900;
+  color: #f2a900;
+}
+footer {
+  border-top: 1px solid #f2a900;
+  color: #f2a900;
+}
+header, footer {
+  display: flex;
+  background: black;
+  
+  justify-content: center;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
