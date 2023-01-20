@@ -57,7 +57,11 @@ header, footer, article, nav, aside {
   padding: 1em;
 }
 
-#nav > li > a {
-  color: #f2a900;
+#main > nav a {
   text-decoration: none;
+  color: inherit;
+}
+
+#main > nav a:hover {
+  color: #fcc33e;
 }
