@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box; 
-  font-family: Ubu;
 }
 body {
   display: flex;
@@ -33,6 +32,13 @@ li {
   
 
 }
+#main > nav > li {
+  border-bottom: 1px solid #f2a900;
+}
+
+#main > aside {
+  color: rgb(189, 187, 187);
+}
 header {
   border-bottom: 1px solid #f2a900;
   color: #f2a900;
@@ -49,4 +55,9 @@ header, footer {
 }
 header, footer, article, nav, aside {
   padding: 1em;
+}
+
+#nav > li > a {
+  color: #f2a900;
+  text-decoration: none;
 }
