@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box; 
+  font-family: Ubu;
 }
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
 }
 #main {
   display: flex;
