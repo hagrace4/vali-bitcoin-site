@@ -21,7 +21,7 @@
     <!-- Bitcoin Image @ top left corner -->
     <img src="/assets/bitcoin.png" style="width:60%; padding-top: 5%; padding-bottom: 10%;">
     <!-- About -->
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-dark-gray">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-dark-gray">
       <i class="fa fa-house w3-xlarge" aria-hidden="true"></i>
       <p>ABOUT</p>
     </a>
@@ -45,6 +45,25 @@
     </a>
     <!-- end references -->
   </nav>
+  <!-- end large NavBar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </div>
+  </div>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div id="smallNavBar" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i
+        class="fa fa-hand-peace-o w3-xlarge"></i>&nbsp;&nbsp;ABOUT</a>
+    <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i
+        class="fa fa-pencil w3-xlarge"></i>&nbsp;&nbsp;SERVICES</a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i
+        class="fa fa-sun-o w3-xlarge"></i>&nbsp;&nbsp;EDUCATION</a>
+    <a href="#references" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i
+        class="fa fa-heart w3-xlarge"></i>&nbsp;&nbsp;REFERENCES</a>
+  </div>
+  <!-- end small screen navBar -->
 
   <!-- Vali Bitcoin Conent -->
   <div class="w3-padding-large" id="main">
@@ -60,10 +79,31 @@
       <h2 class="w3-text-light-grey w3-xxxlarge">a free unconference</h2>
 
     </div>
+
     <!-- end About -->
   </div>
 
 
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("smallNavBar");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 
 
 </body>
