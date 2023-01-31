@@ -1,7 +1,26 @@
+:root {
+  --computer: #dbdfe2;
+  --computer-shadow: #aaabaf;
+  --space: #010837;
+  --text: #65ffff;
+  --white: #ffffff;
+  --offwhite: #f1f1f1;
+  --grey: #ccc;
+  --black: #000000;
+  --offblack: #1B1B1B;
+  --orange: #Ffac48;
+  --purple: #9589FF;
+  --teal: #65d1d1;
+  --btcOrange: #f2a900;
+}
 
 .w3-sidebar {
   width: 120px;
   background-color: #f2a900;
+}
+
+#main {
+  margin-left: 120px;
 }
 
 #main h1 {
@@ -11,7 +30,14 @@
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
 }
+
 #main h3 {
   margin: 0px;
 }
 
+/* Media */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
