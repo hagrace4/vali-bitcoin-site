@@ -22,9 +22,14 @@ h5,
 h6 {  
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  
-  
+  margin: 0%;
+  padding: 0%;
 
+}
+
+#header-border {
+  border-bottom: 2px solid var(--grey);
+  width: 200px;
 }
 
 .w3-sidebar {
