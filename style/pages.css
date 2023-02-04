@@ -52,6 +52,17 @@ h6 {
   margin: 0px;
 }
 
+.underline--emoji {
+  background-image: url(/assets/high-voltage_26a1.png);
+  background-position: 0 1.2em;
+  background-size: 15px 9px;
+  color: #e8665f;
+}
+.underline {
+  background-repeat: repeat-x;
+}
+
+
 /* Media */
 @media only screen and (max-width: 600px) {
   #main {
