@@ -62,6 +62,10 @@ h6 {
   background-repeat: repeat-x;
 }
 
+.education-container {
+  display: flex;
+}
+
 
 /* Media */
 @media only screen and (max-width: 600px) {
