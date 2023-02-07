@@ -176,4 +176,7 @@ h6 {
   .slideshow-container > img {
     max-width: 50%;
   }
+  .slideshow-container {
+    max-width: 90%;
+  }
 }
