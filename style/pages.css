@@ -14,6 +14,14 @@
   --btcOrange: #f2a900;
 }
 
+body {
+  background-color: rgb(14, 14, 14);
+}
+
+.nav-bar {
+  background-color: rgb(14, 14, 14);
+}
+
 h1,
 h2,
 h3,
@@ -75,6 +83,12 @@ h6 {
   justify-content: space-between;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+}
+
+/* Font Awesome Colors */
+
+header .fa {
+  color: #f2a900;
 }
 
 /*********** CSS For Service Slideshow********* */
