@@ -191,7 +191,7 @@ header .fa {
 
 /* Accordion CSS */
 .accordion {
-  background-color: #eee;
+  background-color: var(--btcOrange);
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -201,6 +201,7 @@ header .fa {
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  font-weight: bold;
 }
 
 .active, .accordion:hover {
@@ -221,10 +222,13 @@ header .fa {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(71, 71, 71);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+.panel p {
+  color: white;
 }
 
 /* Accordion Buttons */
@@ -243,6 +247,7 @@ header .fa {
 	padding:9px 23px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5b6178;
+  margin-bottom: 10px;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
